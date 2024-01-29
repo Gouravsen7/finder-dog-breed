@@ -49,8 +49,6 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.8.6)
       public_suffix (>= 2.0.2, < 6.0)
-    archive-zip (0.12.0)
-      io-like (~> 0.3.0)
     arel (9.0.0)
     autoprefixer-rails (10.4.16.0)
       execjs (~> 2)
@@ -73,9 +71,6 @@ GEM
       xpath (~> 3.2)
     case_transform (0.2)
       activesupport
-    chromedriver-helper (2.1.1)
-      archive-zip (~> 0.10)
-      nokogiri (~> 1.8)
     coffee-rails (4.2.2)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0)
@@ -103,7 +98,6 @@ GEM
     google-protobuf (3.25.2-x86_64-linux)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
-    io-like (0.3.1)
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
@@ -163,6 +157,10 @@ GEM
       bundler (>= 1.3.0)
       railties (= 5.2.8.1)
       sprockets-rails (>= 2.0.0)
+    rails-controller-testing (1.0.5)
+      actionpack (>= 5.0.1.rc1)
+      actionview (>= 5.0.1.rc1)
+      activesupport (>= 5.0.1.rc1)
     rails-dom-testing (2.2.0)
       activesupport (>= 5.0.0)
       minitest
@@ -181,7 +179,6 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     regexp_parser (2.9.0)
-    rexml (3.2.6)
     rspec-core (3.12.2)
       rspec-support (~> 3.12.0)
     rspec-expectations (3.12.3)
@@ -200,7 +197,6 @@ GEM
       rspec-support (~> 3.10)
     rspec-support (3.12.1)
     ruby_dep (1.5.0)
-    rubyzip (2.3.2)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
     sass-embedded (1.63.6-x86_64-linux-gnu)
@@ -214,10 +210,6 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
-    selenium-webdriver (4.9.0)
-      rexml (~> 3.2, >= 3.2.5)
-      rubyzip (>= 1.2.2, < 3.0)
-      websocket (~> 1.0)
     spring (2.1.1)
     spring-watcher-listen (2.0.1)
       listen (>= 2.7, < 4.0)
@@ -247,7 +239,6 @@ GEM
       activemodel (>= 5.0)
       bindex (>= 0.4.0)
       railties (>= 5.0)
-    websocket (1.2.10)
     websocket-driver (0.7.6)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
@@ -263,7 +254,6 @@ DEPENDENCIES
   bootstrap (~> 5.3.2)
   byebug
   capybara (>= 2.15, < 4.0)
-  chromedriver-helper
   coffee-rails (~> 4.2)
   dartsass-sprockets
   jbuilder (~> 2.5)
@@ -271,9 +261,9 @@ DEPENDENCIES
   listen (>= 3.0.5, < 3.2)
   puma (~> 3.11)
   rails (~> 5.2.0)
+  rails-controller-testing (~> 1.0)
   rspec-rails
   sass-rails (~> 5.0)
-  selenium-webdriver
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3
