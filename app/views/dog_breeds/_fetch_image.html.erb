@@ -1,0 +1,5 @@
+<% if @dog_breed.error? %>
+  <p class='text-danger'> <%= @dog_breed.message %> </p>
+<% else %>
+  <img src = <%= @dog_breed.message %> width="500px" height="500px" >
+<% end %>

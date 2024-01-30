@@ -1,0 +1,19 @@
+<body style="background-color: #CCE5E3;">
+<nav class="navbar navbar-dark bg-primary">
+ <div class="container-fluid">
+    <h3 class="navbar-brand">Dog Breed Search</h3>
+  </div>
+</nav>  <br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-5 mt-5 ms-5">
+    <%= form_with url: search_path, html: { method: :post }, remote: true do |f| %>
+      <%= f.label :dog_breed, class:"form-label me-3"%>
+      <%= f.text_field :dog_breed,  class:"form-control w-50 me-3", required: true %>
+      <%= f.submit :submit, class: 'btn btn-primary mt-3'%>
+    <% end %>
+  </div>
+
+  <div id= 'breed_image' class="col mt-5" ></div></div>
+</div>
+</body>
